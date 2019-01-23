@@ -50,6 +50,11 @@
     height: 2rem;
     width: 2rem;
     fill: var(--color-btn-down);
+
+    &--rotate {
+      transform: rotate(180deg);
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -77,19 +82,25 @@
   }
 }
 
+/*
+  TEXT-FROM-TO
+*/
+
 .helper-text {
   position: absolute;
-  top: 7rem;
+  top: 8rem;
   left: 9rem;
   font-size: 1.2rem;
+  text-align: left;
 
   &__from-to {
     display: block;
-    text-align: left;
   }
 
   &__bb {
     border-bottom: 1px dotted var(--color-btn);
+    display: inline-block;
+    cursor: pointer;
   }
 }
 /*
@@ -98,7 +109,7 @@
 .line-from-to {
   width: 2px;
   background-color: var(--color-input-bg);
-  height: 20%;
+  height: 28%;
   position: relative;
 
   position: absolute;
@@ -122,8 +133,9 @@
 */
 .decor-from-to {
   position: absolute;
-  top: 8rem;
+  top: 9rem;
   right: 1.4rem;
+  transform: rotate(90deg);
 }
 
 /*
@@ -168,4 +180,5 @@
       background-color: var(--color-btn);
     }
   }
+
 }
