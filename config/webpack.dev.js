@@ -1,4 +1,5 @@
-const path = require("path")
+const path = require("path");
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -14,19 +15,9 @@ module.exports = {
     contentBase: "dist",
     overlay: true
   },
+  devtool: "source-map",
   module: {
     rules: [
-      // { // TODO
-      //   test: /\.svg$/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: "images/SVG/[name].[ext]"
-      //       }
-      //     }
-      //   ]
-      // },
       {
         test: /\.js$/,
         use: [
