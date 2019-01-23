@@ -1,8 +1,16 @@
 :root {
   --color-primary:       #fff;
   --color-primary-light: #fafafa;
-  --color-primaty-dark:  #d8d8d8;
-
+  --color-primaty-dark:  #b4b4b4;
+  // fon
+  --color-box: #2b2b36;
+  --color-line-arc: #5b587c;
+  // inputs
+  --color-input-bg: #353247;
+  --color-input-info: #706c85;
+  --color-btn-down: #78e78d;
+  // btn
+  --color-btn: #77ea8c;
 }
 
 $bp-768: 48em;

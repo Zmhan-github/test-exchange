@@ -1,1 +1,171 @@
+/*
+  SEARCH
+*/
+.search {
 
+  flex: 1 0 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-input-bg);
+    color: inherit;
+    border: none;
+    margin-right: -3rem;
+    margin-left: -3rem;
+    padding: 1.5rem 3.5rem;
+    border-radius: 0 4px 4px 0;
+
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__currency {
+    z-index: 1;
+  }
+
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-btn-down);
+  }
+}
+
+/*
+  MAIN SEARCH
+*/
+
+.main-search {
+  flex: 70%;
+  position: relative;
+
+  &__input {
+    border-radius: 4px 0 0 4px;
+    border-right: 1px solid var(--color-primaty-dark);
+  }
+
+  &__info {
+    font-size: .8rem;
+    color: var(--color-input-info);
+    z-index: 1;
+
+    position: absolute;
+    left: 3.5rem;
+    top: 5px;
+  }
+}
+
+.helper-text {
+  position: absolute;
+  top: 7rem;
+  left: 9rem;
+  font-size: 1.2rem;
+
+  &__from-to {
+    display: block;
+    text-align: left;
+  }
+
+  &__bb {
+    border-bottom: 1px dotted var(--color-btn);
+  }
+}
+/*
+  LINE-SEARCH__FROM-TO
+*/
+.line-from-to {
+  width: 2px;
+  background-color: var(--color-input-bg);
+  height: 20%;
+  position: relative;
+
+  position: absolute;
+  top: 7rem;
+  left: 7rem;
+
+  &__arc {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--color-line-arc);
+    border-radius: 100%;
+
+    position: absolute;
+    top: 33%;
+    left: -4px;
+  }
+}
+
+/*
+  DECOR-SEARCH__FROM-TO
+*/
+.decor-from-to {
+  position: absolute;
+  top: 8rem;
+  right: 1.4rem;
+}
+
+/*
+  BUTTON-SEARCH__FROM-TO
+*/
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    width: 80%;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: .3rem;
+    transition: all .2s;
+    font-size: inherit;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(var(--color-box),.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(var(--color-box),.2);
+  }
+  
+  &--green {
+    background-color: var(--color-btn);
+    color: inherit;
+
+    &::after {
+      background-color: var(--color-btn);
+    }
+  }
+}

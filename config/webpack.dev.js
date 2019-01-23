@@ -16,6 +16,17 @@ module.exports = {
   },
   module: {
     rules: [
+      // { // TODO
+      //   test: /\.svg$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "images/SVG/[name].[ext]"
+      //       }
+      //     }
+      //   ]
+      // },
       {
         test: /\.js$/,
         use: [
@@ -65,13 +76,13 @@ module.exports = {
           {
             loader: "html-loader",
             options: {
-              attrs: ["img:src"]
+              attrs: ["img:src", "use:xlink:href"]
             }
           }
         ]
       },
       {
-        test: /\.(jpg|gif|png)$/,
+        test: /\.(jpg|gif|png|svg)$/,
         use: [
           {
             loader: "file-loader",

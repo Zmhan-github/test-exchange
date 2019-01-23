@@ -10,3 +10,21 @@
     margin: 0 auto;
   }
 }
+
+.l-exchange {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  height: 35vh;
+  background-color: var(--color-box);
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.c-exchange {
+  display: flex;
+  width: 80%;
+}
