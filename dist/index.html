@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-  <title>Test Exchange</title>
-</head>
-<body>
-  <div class="container">
-    <div class="l-exchange">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700"
+      rel="stylesheet"
+    />
+    <title>Test Exchange</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="l-exchange">
         <div class="c-exchange">
-            <form action="#" class="search main-search">
-              <span class="main-search__info">You Send</span>
-              <input type="text" class="search__input main-search__input" value="1">
-            </form>
-            <form action="#" class="search">
-              <button class="search__button search__currency">
-                <svg class="search__icon">
-                  <use xlink:href="images/sprite.svg#icon-diamonds"></use>
-                </svg>
-              </button>
-              <input type="text" class="search__input" value="ETH">
-              <button class="search__button">
-                <svg class="search__icon search__icon--rotate">
-                  <use xlink:href="images/sprite.svg#icon-ctrl"></use>
-                </svg>
-              </button>
-            </form>
+          <form action="#" class="search main-search">
+            <span class="main-search__info">You Send</span>
+            <input
+              type="text"
+              class="search__input main-search__input"
+              value="1"
+            />
+          </form>
+          <form action="#" class="search">
+            <button class="search__button search__currency">
+              <svg class="search__icon">
+                <use xlink:href="images/sprite.svg#icon-coin-dollar"></use>
+              </svg>
+            </button>
+            <input type="text" class="search__input" value="USD" readonly />
+            <button class="search__button">
+              <svg class="search__icon search__icon--rotate">
+                <use xlink:href="images/sprite.svg#icon-ctrl"></use>
+              </svg>
+            </button>
+          </form>
         </div>
         <div class="c-exchange">
-            <form action="#" class="search main-search">
-              <span class="main-search__info">You Get</span>
-              <input type="text" class="search__input main-search__input" value="45.5304295">
-            </form>
-            <form action="#" class="search">
-              <button class="search__button search__currency">
-                <svg class="search__icon">
-                  <use xlink:href="images/sprite.svg#icon-coin-pound"></use>
-                </svg>
-              </button>
-              <input type="text" class="search__input" value="ERO">
-              <button class="search__button">
-                <svg class="search__icon search__icon--rotate">
-                  <use xlink:href="images/sprite.svg#icon-ctrl"></use>
-                </svg>
-              </button>
-            </form>
+          <form action="#" class="search main-search">
+            <span class="main-search__info">You Get</span>
+            <input
+              type="text"
+              class="search__input main-search__input"
+              value="45.5304295"
+            />
+          </form>
+          <form action="#" class="search">
+            <button class="search__button search__currency">
+              <svg class="search__icon">
+                <use xlink:href="images/sprite.svg#icon-coin-pound"></use>
+              </svg>
+            </button>
+            <input type="text" class="search__input" value="ERO" readonly />
+            <button class="search__button">
+              <svg class="search__icon search__icon--rotate">
+                <use xlink:href="images/sprite.svg#icon-ctrl"></use>
+              </svg>
+            </button>
+          </form>
         </div>
         <div class="helper-text">
           <span class="helper-text__from-to">
@@ -56,17 +67,15 @@
             Exact exchange amount
           </span>
         </div>
-        <div class="line-from-to">
-          <div class="line-from-to__arc"></div>
-        </div>
+        <div class="line-from-to"><div class="line-from-to__arc"></div></div>
         <div class="decor-from-to">
           <svg class="search__icon">
             <use xlink:href="images/sprite.svg#icon-tab"></use>
           </svg>
         </div>
         <a href="#" class="btn btn--green btn--mb20">Exchange</a>
+      </div>
     </div>
-  </div>
-  <script src="main-bundle.js"></script>
-</body>
+    <script src="main-bundle.js"></script>
+  </body>
 </html>

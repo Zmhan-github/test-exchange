@@ -1,12 +1,13 @@
 :root {
-  --color-primary:       #fff;
+  --color-primary: #fff;
   --color-primary-light: #fafafa;
-  --color-primaty-dark:  #b4b4b4;
+  --color-primaty-dark: #b4b4b4;
   // fon
   --color-box: #2b2b36;
   --color-line-arc: #5b587c;
   // inputs
   --color-input-bg: #353247;
+  --color-input-bg-dark: #4b485e;
   --color-input-info: #706c85;
   --color-btn-down: #78e78d;
   // btn
@@ -30,6 +31,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%;
 
+  @media only screen and (max-width: 500px) {
+    font-size: 50%;
+  }
 }
 
 body {
